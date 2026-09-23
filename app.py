@@ -168,7 +168,7 @@ def load_all_regions_summary():
 st.markdown("""
 <div class="main-header">
     <div style="margin-bottom: 8px;">
-        <span class="badge">HW10 作業</span>
+        <span class="badge">HW1 作業</span>
         <span class="badge">CWA API</span>
         <span class="badge">SQLite3</span>
         <span class="badge">Streamlit Web App</span>
@@ -201,15 +201,7 @@ with st.sidebar:
     )
 
     st.markdown("---")
-    st.markdown("### 📊 專案模組架構")
-    st.markdown("""
-    - **模組 1**：取得 CWA API (20%)
-    - **模組 2**：分析 JSON 提取氣溫 (20%)
-    - **模組 3**：存入 SQLite (20%)
-    - **模組 4**：Streamlit 氣溫預報 (40%)
-    - **模組 5**：台灣地圖視覺化 (Optional)
-    """)
-    st.caption("資料來源：交通部中央氣象署 Open Data API")
+    st.caption("📡 資料來源：交通部中央氣象署 Open Data API")
 
 # 透過 SQL 查詢所選地區資料
 df_forecast = load_forecast_for_region(selected_region)
@@ -258,52 +250,43 @@ with col_m4:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# 主要內容切換頁籤：[一週氣溫趨勢圖表] 與 [進階台灣地圖視覺化]
-tab_chart, tab_map = st.tabs(["📈 一週氣溫折線圖與表格 (模組 4)", "🗺️ 進階：台灣地圖視覺化 (模組 5 - Optional)"])
+# 左右並排整合展示：左側折線圖與資料表格，右側台灣互動地圖視覺化（無需切換頁籤）
+col_chart, col_map = st.columns([1.15, 1.0], gap="large")
 
-with tab_chart:
-    st.subheader(f"Temperature Forecast - {selected_region}")
+with col_chart:
+    st.subheader(f"📈 氣溫預報折線圖 - {selected_region}")
     
-    col_chart, col_table = st.columns([1.7, 1.0])
+    # 準備繪圖 DataFrame
+    plot_df = df_forecast.copy()
+    # 轉換日期顯示格式 (MM/DD) 以符合作業圖例
+    plot_df["DisplayDate"] = plot_df["Date"].apply(lambda d: d[5:] if len(d) >= 10 else d)
+    
+    # 自訂折線圖 (使用 Streamlit 原生折線圖與色彩)
+    chart_data = plot_df.set_index("DisplayDate")[["MaxT", "MinT"]]
+    st.line_chart(
+        chart_data,
+        color=["#e74c3c", "#3498db"], # MaxT 紅色, MinT 藍色
+        use_container_width=True,
+        y_label="Temperature (°C)"
+    )
+    st.caption("🔴 紅線：每日最高溫 (MaxT) ｜ 🔵 藍線：每日最低溫 (MinT)")
 
-    with col_chart:
-        st.markdown("**最高溫與最低溫折線圖 (MaxT 紅色 / MinT 藍色)**")
-        
-        # 準備繪圖 DataFrame
-        plot_df = df_forecast.copy()
-        # 轉換日期顯示格式 (MM/DD) 以符合作業圖例
-        plot_df["DisplayDate"] = plot_df["Date"].apply(lambda d: d[5:] if len(d) >= 10 else d)
-        
-        # 自訂折線圖 (使用 Streamlit 原生折線圖與色彩)
-        chart_data = plot_df.set_index("DisplayDate")[["MaxT", "MinT"]]
-        st.line_chart(
-            chart_data,
-            color=["#e74c3c", "#3498db"], # MaxT 紅色, MinT 藍色
-            use_container_width=True,
-            y_label="Temperature (°C)"
-        )
-        st.caption("🔴 紅線：每日最高溫 (MaxT) ｜ 🔵 藍線：每日最低溫 (MinT)")
+    st.markdown("##### 📋 一週預報資料表格 (7 天詳細預報)")
+    formatted_table = df_forecast.copy()
+    st.dataframe(
+        formatted_table,
+        column_config={
+            "Date": st.column_config.TextColumn("預報日期 (Date)"),
+            "MinT": st.column_config.NumberColumn("最低溫 (°C)", format="%.1f"),
+            "MaxT": st.column_config.NumberColumn("最高溫 (°C)", format="%.1f")
+        },
+        hide_index=True,
+        use_container_width=True
+    )
 
-    with col_table:
-        st.markdown("**一週資料表格 (7 天詳細預報)**")
-        formatted_table = df_forecast.copy()
-        # 顯示整齊的數據表格
-        st.dataframe(
-            formatted_table,
-            column_config={
-                "Date": st.column_config.TextColumn("預報日期 (Date)"),
-                "MinT": st.column_config.NumberColumn("最低溫 (°C)", format="%.1f"),
-                "MaxT": st.column_config.NumberColumn("最高溫 (°C)", format="%.1f")
-            },
-            hide_index=True,
-            use_container_width=True
-        )
-
-with tab_map:
-    st.subheader("🗺️ 台灣六大區域氣溫地圖 (Folium 互動式視覺化)")
-    st.markdown("地圖依各區平均氣溫動態標色，點擊圖中圓點即可查看該區詳細氣溫卡片。")
-
-    col_map_view, col_map_legend = st.columns([2.2, 1.0])
+with col_map:
+    st.subheader("🗺️ 台灣六大區域氣溫地圖")
+    st.caption("依各區平均氣溫動態標色，點擊圖中圓點即可查看該區詳細氣溫卡片。")
 
     # 取得六大區域彙總數據
     df_summary = load_all_regions_summary()
@@ -346,35 +329,35 @@ with tab_map:
                 weight=2
             ).add_to(m)
 
-    with col_map_view:
-        # 使用 streamlit-folium 嵌入地圖
-        st_folium(m, width="100%", height=450)
+    # 嵌入地圖
+    st_folium(m, width="100%", height=400)
 
-    with col_map_legend:
-        st.markdown("""
-        <div class="legend-box">
-            <h4 style="margin-top:0;">🎨 依平均溫度設定顏色：</h4>
-            <div style="display:flex; align-items:center; margin-bottom:8px;">
-                <span style="background-color:#2b83ba; width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:8px;"></span>
-                <span><b>&lt; 20°C</b> (藍色 - 涼爽/低溫)</span>
+    # 溫度圖例說明
+    st.markdown("""
+    <div class="legend-box">
+        <h4 style="margin-top:0; font-size: 0.95rem;">🎨 依平均溫度設定顏色：</h4>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; font-size:0.85rem;">
+            <div style="display:flex; align-items:center;">
+                <span style="background-color:#2b83ba; width:12px; height:12px; border-radius:50%; display:inline-block; margin-right:5px;"></span>
+                <span><b>&lt; 20°C</b> (藍色)</span>
             </div>
-            <div style="display:flex; align-items:center; margin-bottom:8px;">
-                <span style="background-color:#2ecc71; width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:8px;"></span>
-                <span><b>20 - 25°C</b> (綠色 - 舒適)</span>
+            <div style="display:flex; align-items:center;">
+                <span style="background-color:#2ecc71; width:12px; height:12px; border-radius:50%; display:inline-block; margin-right:5px;"></span>
+                <span><b>20 - 25°C</b> (綠色)</span>
             </div>
-            <div style="display:flex; align-items:center; margin-bottom:8px;">
-                <span style="background-color:#f39c12; width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:8px;"></span>
-                <span><b>25 - 30°C</b> (黃色 - 溫暖)</span>
+            <div style="display:flex; align-items:center;">
+                <span style="background-color:#f39c12; width:12px; height:12px; border-radius:50%; display:inline-block; margin-right:5px;"></span>
+                <span><b>25 - 30°C</b> (黃色)</span>
             </div>
-            <div style="display:flex; align-items:center; margin-bottom:8px;">
-                <span style="background-color:#e74c3c; width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:8px;"></span>
-                <span><b>&gt; 30°C</b> (紅色 - 炎熱)</span>
+            <div style="display:flex; align-items:center;">
+                <span style="background-color:#e74c3c; width:12px; height:12px; border-radius:50%; display:inline-block; margin-right:5px;"></span>
+                <span><b>&gt; 30°C</b> (紅色)</span>
             </div>
         </div>
-        """, unsafe_allow_html=True)
-        
-        st.markdown("<br>", unsafe_allow_html=True)
-        st.info("💡 **操作提示**：地圖支援平移與縮放，點擊地圖上的各區圓點即可查看一週氣溫摘要。")
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.caption("💡 提示：地圖支援平移縮放，點擊圓點可查看氣溫詳情。")
 
 st.markdown("---")
 st.caption("程式探索天氣 · 資料看見台灣 ｜ Designed with Streamlit & Folium")
