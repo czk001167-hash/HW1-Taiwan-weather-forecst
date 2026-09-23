@@ -3,3 +3,4 @@ pandas
 streamlit
 folium
 streamlit-folium
+python-dotenv

@@ -1,0 +1,864 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "F-A0010-001",
+    "fields": [
+      {
+        "id": "locationName",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "locations": {
+      "location": [
+        {
+          "locationName": "北部地區",
+          "weatherElement": [
+            {
+              "elementName": "MinT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.3"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.7"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.1"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.3"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.9"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.3"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.9"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "MaxT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.3"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.4"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.6"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.4"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.9"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.4"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "中部地區",
+          "weatherElement": [
+            {
+              "elementName": "MinT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.3"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.9"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.8"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.2"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.8"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "MaxT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.9"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.1"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.9"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.2"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.2"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.7"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "南部地區",
+          "weatherElement": [
+            {
+              "elementName": "MinT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.7"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.7"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.7"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.7"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "26.8"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "MaxT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.8"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.8"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.8"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.8"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.8"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.2"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "31.0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "東北部地區",
+          "weatherElement": [
+            {
+              "elementName": "MinT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "23.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "MaxT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "28.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "28.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "28.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "28.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "28.0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "東部地區",
+          "weatherElement": [
+            {
+              "elementName": "MinT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "24.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.5"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "MaxT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "locationName": "東南部地區",
+          "weatherElement": [
+            {
+              "elementName": "MinT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "25.0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "elementName": "MaxT",
+              "time": [
+                {
+                  "startTime": "2026-09-23 00:00:00",
+                  "endTime": "2026-09-23 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-24 00:00:00",
+                  "endTime": "2026-09-24 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-25 00:00:00",
+                  "endTime": "2026-09-25 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-26 00:00:00",
+                  "endTime": "2026-09-26 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-27 00:00:00",
+                  "endTime": "2026-09-27 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-28 00:00:00",
+                  "endTime": "2026-09-28 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "29.5"
+                    }
+                  ]
+                },
+                {
+                  "startTime": "2026-09-29 00:00:00",
+                  "endTime": "2026-09-29 23:59:59",
+                  "elementValue": [
+                    {
+                      "value": "30.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
