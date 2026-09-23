@@ -8,6 +8,8 @@
 
 🚀 **線上即時展示 (Live Demo)**：[https://hw1-taiwan-weather-forecst-snuohwhhhdp3thdtc5tr6b.streamlit.app/](https://hw1-taiwan-weather-forecst-snuohwhhhdp3thdtc5tr6b.streamlit.app/)
 
+![Taiwan Weather Forecast Dashboard](assets/demo.png)
+
 ---
 
 ## 📌 專案簡介 (Overview)
