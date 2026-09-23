@@ -3,6 +3,11 @@
 > **從氣象資料到互動式天氣預報 Web 應用程式**  
 > 整合 **CWA API × JSON × Python × SQLite × Streamlit**，實現資料獲取、解析、儲存、查詢與視覺化展示。
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hw1-taiwan-weather-forecst-snuohwhhhdp3thdtc5tr6b.streamlit.app/)
+[![GitHub repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/czk001167-hash/HW1-Taiwan-weather-forecst)
+
+🚀 **線上即時展示 (Live Demo)**：[https://hw1-taiwan-weather-forecst-snuohwhhhdp3thdtc5tr6b.streamlit.app/](https://hw1-taiwan-weather-forecst-snuohwhhhdp3thdtc5tr6b.streamlit.app/)
+
 ---
 
 ## 📌 專案簡介 (Overview)
